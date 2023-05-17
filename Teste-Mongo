@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="15adfd2c-4d2b-471c-beac-cc3a1c3345e8" activeEnvironment="Default" name="REST Project 1" resourceRoot="" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="5c3c8e74-dad4-4d83-aa6e-a4404b33d58b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:5005" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:5005</con:endpoint></con:endpoints><con:resource name="" path="/AnswerResponse" id="fba35a53-543f-4eaf-9537-71e7423ff0cf"><con:settings/><con:parameters><con:parameter><con:name>DateStart</con:name><con:style>QUERY</con:style></con:parameter><con:parameter><con:name>DateEnd</con:name><con:style>QUERY</con:style></con:parameter><con:parameter><con:name>idEvaluation</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:resource name="new" path="new" id="14ea7b61-2151-4c3f-8277-46542ddf52fd"><con:settings/><con:parameters/><con:method name="Method 1" id="0cc44ddc-98d8-4f63-8f0e-eaeefbe89f2f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="ee4d81d8-4bea-4151-a47e-7c90e2304a42" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5005</con:endpoint><con:request/><con:originalUri>https://localhost/AnswerResponse/new</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="DateEnd" value="2023-04-05T18:33:26"/>
+  <con:entry key="DateStart" value="2023-03-06T21:28:15"/>
+  <con:entry key="idEvaluation" value="10"/>
+</con:parameters></con:request></con:method></con:resource><con:method name="Edit" id="920d54e5-61fe-403d-8ed5-80d0a5ebdabc" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>405</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>405</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="510bd19c-3049-4a73-aa4d-d3921ada5c25" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:7094</con:endpoint><con:request>{
+    "Request": {
+        "SKe" : "27386c41-f1bc-4422-8d2e-b888f6e94296",
+        "Apl" : 2,
+        "Ev" : 10,
+        "Dt" : "2023-04-04T18:33:26",
+        "Mt" : {
+            "CPF" : "28794989028"
+        }
+    },
+    "Response": {
+        "Dta" : "2023-04-04T21:28:15",
+        "Ans" : [
+            {
+                "EvQ" : "F88F66CC-580D-4B38-9A67-A3F3FA854146",
+                "EvQO" : {
+                    "25710B8B-105E-4D5A-902F-0B2109099B1B" : "Apenas um pouco bom"
+                }
+            },
+            {
+                "EvQ" : "B89859DF-8ACB-4744-8D86-A32CA6708007",
+                "EvQO" : {
+                    "DF901BB4-DAA8-4DC4-AF2B-FACD963F0AA1" : "Muito mal"
+                }
+            },
+            {
+                "EvQ" : "58D7ED5E-1D34-4A30-909A-E5E36E2E8B41",
+                "EvQO" : {
+                    "027FDDA0-912F-4B4D-8CC8-BC17DF17E3F1" : "Muito menos do que o esperado"
+                }
+            }
+        ]
+    }
+}</con:request><con:originalUri>https://localhost/AnswerResponse</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>DateStart</con:entry><con:entry>DateEnd</con:entry><con:entry>idEvaluation</con:entry></con:parameterOrder></con:request></con:method><con:method name="Create" id="d36d6e0c-6b56-4bde-af96-bb1ffc4b98bf" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/problem+json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ans="https://localhost/AnswerResponse">ans:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="7225c972-53f4-41cc-95eb-d5e008ab7808" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5005</con:endpoint><con:request>{
+    "Request": {
+        "SKe" : "27386c41-f1bc-4422-8d2e-b888f6e94296",
+        "Apl" : 2,
+        "Ev" : 10,
+        "Dt" : "2023-04-04T18:33:26",
+        "Mt" : {
+            "CPF" : "28794989028"
+        }
+    }
+}</con:request><con:originalUri>https://localhost/AnswerResponse</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Aggregator" id="ae4b6a72-bf6e-4a1b-b9fc-ad2e913027ce" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="383bdc5d-cc81-4b07-9ead-65c6817bdaef" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5005</con:endpoint><con:request/><con:originalUri>https://localhost/AnswerResponse</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="DateEnd" value="2023-04-05T18:33:26"/>
+  <con:entry key="DateStart" value="2023-03-06T21:28:15"/>
+  <con:entry key="idEvaluation" value="10"/>
+</con:parameters><con:parameterOrder><con:entry>DateStart</con:entry><con:entry>DateEnd</con:entry><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="032c6288-1905-4315-bb7a-33efa1b35fc1" name="Teste"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9a968e3c-cf0d-4500-bc71-19606d0ec3d6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Create" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Create" id="76be8f96-dd39-46de-9dce-26940e6e5153"><con:settings/><con:config service="http://localhost:5005" resourcePath="/AnswerResponse" methodName="Create" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Create" id="7225c972-53f4-41cc-95eb-d5e008ab7808" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5005</con:endpoint><con:request>{
+    "Request": {
+        "SKe" : "27386c41-f1bc-4422-8d2e-b888f6e94296",
+        "Apl" : 2,
+        "Ev" : 10,
+        "Dt" : "2023-04-04T18:33:26",
+        "Mt" : {
+            "CPF" : "28794989028"
+        }
+    }
+}</con:request><con:originalUri>https://localhost/AnswerResponse</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:loadTest id="f15cdb91-dcae-49db-a23b-eb399e6f46fd" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="3e4009f1-de2d-4448-8dc8-7ed5010c3300" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Update" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Edit" id="6aa6a0d0-1dbd-425b-acc8-be6e6577feb8"><con:settings/><con:config service="http://localhost:5005" resourcePath="/AnswerResponse" methodName="Edit" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Edit" id="510bd19c-3049-4a73-aa4d-d3921ada5c25" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:7094</con:endpoint><con:request>{
+    "Request": {
+        "SKe" : "27386c41-f1bc-4422-8d2e-b888f6e94296",
+        "Apl" : 2,
+        "Ev" : 10,
+        "Dt" : "2023-04-04T18:33:26",
+        "Mt" : {
+            "CPF" : "28794989028"
+        }
+    },
+    "Response": {
+        "Dta" : "2023-04-04T21:28:15",
+        "Ans" : [
+            {
+                "EvQ" : "F88F66CC-580D-4B38-9A67-A3F3FA854146",
+                "EvQO" : {
+                    "25710B8B-105E-4D5A-902F-0B2109099B1B" : "Apenas um pouco bom"
+                }
+            },
+            {
+                "EvQ" : "B89859DF-8ACB-4744-8D86-A32CA6708007",
+                "EvQO" : {
+                    "DF901BB4-DAA8-4DC4-AF2B-FACD963F0AA1" : "Muito mal"
+                }
+            },
+            {
+                "EvQ" : "58D7ED5E-1D34-4A30-909A-E5E36E2E8B41",
+                "EvQO" : {
+                    "027FDDA0-912F-4B4D-8CC8-BC17DF17E3F1" : "Muito menos do que o esperado"
+                }
+            }
+        ]
+    }
+}</con:request><con:originalUri>https://localhost/AnswerResponse</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>DateStart</con:entry><con:entry>DateEnd</con:entry><con:entry>idEvaluation</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:loadTest id="8409fbba-04b3-4c98-a24b-a16f8fd1d368" name="Update"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="63be4148-fe46-4eb1-8dac-09edaf5088f2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Aggregator" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Aggregator" id="a8a5dad8-94a4-4460-9edb-69f13995ca57"><con:settings/><con:config service="http://localhost:5005" resourcePath="/AnswerResponse" methodName="Aggregator" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Aggregator" id="383bdc5d-cc81-4b07-9ead-65c6817bdaef" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5005</con:endpoint><con:request/><con:originalUri>https://localhost/AnswerResponse</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="DateEnd" value="2023-04-05T18:33:26"/>
+  <con:entry key="DateStart" value="2023-03-06T21:28:15"/>
+  <con:entry key="idEvaluation" value="10"/>
+</con:parameters><con:parameterOrder><con:entry>DateStart</con:entry><con:entry>DateEnd</con:entry><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:loadTest id="9c01cf19-bd3a-4777-afa6-731a848cedd3" name="Aggregator"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="e99ec087-b1f2-49c5-96df-e38fb95ab7fa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="NewAggregator" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="NewAggregator" id="ebce61c3-a88c-4084-b28c-3b7077db004b"><con:settings/><con:config service="http://localhost:5005" resourcePath="/AnswerResponse/new" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="NewAggregator" id="ee4d81d8-4bea-4151-a47e-7c90e2304a42" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5005</con:endpoint><con:request/><con:originalUri>https://localhost/AnswerResponse/new</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="DateEnd" value="2023-04-05T18:33:26"/>
+  <con:entry key="DateStart" value="2023-03-06T21:28:15"/>
+  <con:entry key="idEvaluation" value="10"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:loadTest id="3884bfba-1d98-4606-9a3b-f742e0a26692" name="NewAggregator"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
