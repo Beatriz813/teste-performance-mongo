@@ -1,0 +1,15 @@
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\bin\Release\net6.0\VoxData.VoxSurvey.Mongo.deps.json
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\bin\Release\net6.0\VoxData.VoxSurvey.Mongo.dll
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\bin\Release\net6.0\VoxData.VoxSurvey.Mongo.pdb
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\bin\Release\net6.0\VoxData.Component.Encryption.Encrypt.dll
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\bin\Release\net6.0\VoxData.Component.Encryption.Encrypt.pdb
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.csproj.AssemblyReference.cache
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.AssemblyInfoInputs.cache
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.AssemblyInfo.cs
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.csproj.CoreCompileInputs.cache
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.csproj.CopyComplete
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.dll
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\refint\VoxData.VoxSurvey.Mongo.dll
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\VoxData.VoxSurvey.Mongo.pdb
+C:\Users\bmonteiro\Documents\Gitlab\net-projects\Data\VoxData.VoxSurvey.Mongo\obj\Release\net6.0\ref\VoxData.VoxSurvey.Mongo.dll
